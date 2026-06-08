@@ -31,7 +31,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+#testandoARGOCD
 app.include_router(upload_router)
 app.include_router(users_router)
 app.mount("/media", StaticFiles(directory=str(MEDIA_DIR)), name="media")
