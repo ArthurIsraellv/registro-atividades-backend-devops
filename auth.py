@@ -59,7 +59,7 @@ def _decode_token(token: str, expected_type: str) -> str:
 def verify_refresh_token(token: str) -> str:
     """Verify a refresh token and return the subject email."""
     return _decode_token(token, "refresh")
-
+#testando ARGOCD
 
 def get_current_user(
     credentials: HTTPAuthorizationCredentials = Depends(http_bearer),
